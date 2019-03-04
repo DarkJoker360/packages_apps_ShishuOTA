@@ -92,6 +92,7 @@ public class UpdatesListAdapter extends RecyclerView.Adapter<UpdatesListAdapter.
     public static class ViewHolder extends RecyclerView.ViewHolder {
         private Button mAction;
         private Button mChangelog;
+        private TextView mUpdateTitle;
 
         private TextView mBuildDate;
         private TextView mBuildVersion;
@@ -105,6 +106,7 @@ public class UpdatesListAdapter extends RecyclerView.Adapter<UpdatesListAdapter.
             super(view);
             mAction = (Button) view.findViewById(R.id.update_action);
             mChangelog = (Button) view.findViewById(R.id.update_changelog);
+            mUpdateTitle = (TextView) view.findViewById(R.id.update_card_title);
 
             mBuildDate = (TextView) view.findViewById(R.id.build_date);
             mBuildVersion = (TextView) view.findViewById(R.id.build_version);
@@ -195,7 +197,6 @@ public class UpdatesListAdapter extends RecyclerView.Adapter<UpdatesListAdapter.
         viewHolder.mProgressText.setVisibility(View.VISIBLE);
         viewHolder.mBuildSize.setVisibility(View.INVISIBLE);
         viewHolder.mBuildVersion.setVisibility(View.GONE);
-        viewHolder.mBuildSummary.setVisibility(View.GONE);
 
         // changelog button
         setButtonAction(viewHolder.mChangelog, Action.CHANGELOG, downloadId, true);
@@ -213,6 +214,15 @@ public class UpdatesListAdapter extends RecyclerView.Adapter<UpdatesListAdapter.
             setButtonAction(viewHolder.mAction,
                     Utils.canInstall(update) ? Action.INSTALL : Action.DELETE,
                     downloadId, !isBusy());
+            if (Utils.canInstall(update))  {
+                viewHolder.mUpdateTitle.setText(mActivity.getString(R.string.update_title));
+                viewHolder.mBuildSummary.setText(mActivity.getString(R.string.update_about_install));
+                viewHolder.mChangelog.setVisibility(View.VISIBLE);
+            } else {
+                viewHolder.mUpdateTitle.setText(mActivity.getString(R.string.update_old_title));
+                viewHolder.mBuildSummary.setText(mActivity.getString(R.string.update_old_summary));
+                viewHolder.mChangelog.setVisibility(View.GONE);
+            }
         } else if (!Utils.canInstall(update)) {
             viewHolder.itemView.setOnLongClickListener(
                     getLongClickListener(update, false, viewHolder.mBuildDate));
@@ -220,6 +230,11 @@ public class UpdatesListAdapter extends RecyclerView.Adapter<UpdatesListAdapter.
         } else {
             viewHolder.itemView.setOnLongClickListener(
                     getLongClickListener(update, false, viewHolder.mBuildDate));
+            viewHolder.mUpdateTitle.setText(mActivity.getString(R.string.update_title));
+            viewHolder.mBuildSummary.setText(mActivity.getString(
+                            R.string.update_summary, mActivity.getString(
+                            R.string.update_new_release, SystemProperties.get(Constants.PROP_DEVICE)), mActivity.getString(
+                            R.string.update_new_release_small)));
             setButtonAction(viewHolder.mAction, Action.DOWNLOAD, downloadId, !isBusy());
         }
         String fileSize = Formatter.formatShortFileSize(mActivity, update.getFileSize());
@@ -229,10 +244,6 @@ public class UpdatesListAdapter extends RecyclerView.Adapter<UpdatesListAdapter.
         viewHolder.mProgressText.setVisibility(View.INVISIBLE);
         viewHolder.mBuildSize.setVisibility(View.VISIBLE);
         viewHolder.mBuildVersion.setVisibility(View.GONE);
-        viewHolder.mBuildSummary.setText(mActivity.getString(
-                        R.string.update_summary, mActivity.getString(
-                        R.string.update_new_release, SystemProperties.get(Constants.PROP_DEVICE)), mActivity.getString(
-                        R.string.update_new_release_small)));
         /**if (Utils.isBigRelease()) {
             viewHolder.mBuildVersion.setVisibility(View.VISIBLE);
             viewHolder.mBuildVersion.setText(Utils.getReleaseVersion(update.getName()));
