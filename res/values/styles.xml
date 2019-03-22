@@ -7,11 +7,13 @@
         <item name="windowActionModeOverlay">true</item>
         <item name="android:windowLightStatusBar">@bool/theme_is_light</item>
         <item name="android:windowLightNavigationBar">@bool/theme_is_light</item>
-        <item name="android:windowBackground">@color/update_background</item>
+        <item name="android:windowBackground">@drawable/updater_background</item>
         <item name="android:popupMenuStyle">@style/UpdaterPopupMenu</item>
         <item name="textAppearanceLargePopupMenu">@style/UpdaterPopupText</item>
         <item name="textAppearanceSmallPopupMenu">@style/UpdaterPopupTextSmall</item>
         <item name="alertDialogTheme">@style/UpdaterDialogStyle</item>
+        <item name="android:windowShowWallpaper">@bool/theme_show_wallpaper</item>
+        <item name="android:windowIsTranslucent">@bool/theme_translucent</item>
     </style>
 
     <style name="AppTheme.NoActionBar">
