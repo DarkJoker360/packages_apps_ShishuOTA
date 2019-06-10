@@ -26,14 +26,14 @@
     <string name="downloading_notification">Загрузка...</string>
     <string name="download_paused_notification">Загрузка приостановлена</string>
     <string name="download_paused_error_notification">Ошибка при загрузке</string>
-    <string name="download_completed_notification">Загрузка завершена</string>
+    <string name="download_completed_notification">Завантаження завершено</string>
     <string name="download_starting_notification">Загрузка началась</string>
     <string name="update_failed_notification">Обновление не удалось</string>
     <string name="new_updates_found_title">Доступно обновление системы</string>
     <string name="text_download_speed">%1$s, %2$s/сек</string>
     <string name="pause_button">Пауза</string>
     <string name="resume_button">Продолжить</string>
-    <string name="installing_update">Установка обновления</string>
+    <string name="installing_update">Інсталяція пакету оновлення</string>
     <string name="installing_update_error">Ошибка установки</string>
     <string name="installing_update_finished">Обновление установлено</string>
     <string name="finalizing_package">Завершение установки</string>
@@ -42,7 +42,7 @@
     <string name="dialog_battery_low_title">Низкий заряд батареи</string>
     <string name="dialog_battery_low_message_pct">Уровень заряда батареи слишком низкий, для продолжения необходимо хотя бы <xliff:g id="percent_discharging">%1$d</xliff:g>%% заряда или <xliff:g id="percent_charging">%2$d</xliff:g>%% во время зарядки.</string>
     <string name="reboot">Перезагрузка</string>
-    <string name="menu_refresh">Обновить</string>
+    <string name="menu_refresh">Оновити</string>
     <string name="menu_preferences">Пользовательские настройки</string>
     <string name="menu_auto_updates_check">Автоматическая проверка обновлений</string>
     <string name="menu_auto_delete_updates">Удалить файлы обновления после установки</string>
@@ -111,17 +111,17 @@
     <string name="update_failed_channel_title">Обновление не удалось</string>
     <!-- New Headers info -->
     <string name="header_updates_no_update">Вы используете последнюю версию</string>
-    <string name="header_updates_new_build">Есть новое обновление</string>
+    <string name="header_updates_new_build">Виявлено нове оновлення</string>
     <!-- Strings for update card -->
     <string name="update_title">Доступно обновление системы</string>
     <string name="update_button_changelog">Список изменений</string>
-    <string name="update_new_release">Новое обновление пришло для вашего %s!</string>
-    <string name="update_new_release_small">Проверьте новые улучшения и изменения, которые принесла эта сборка, или загрузите ее прямо сейчас.</string>
-    <string name="update_new_release_big">Проверьте новые вещи, которые ждут вас, или загрузите этот новый релиз прямо сейчас.</string>
+    <string name="update_new_release">Надійшло нове оновлення для вашого %s!</string>
+    <string name="update_new_release_small">Перевірте нові вдосконалення та зміни, які надає ця збірка прямо зараз.</string>
+    <string name="update_new_release_big">Перевірте новий матеріал, який чекає на вас, або завантажте новий випуск прямо зараз.</string>
     <!-- changelog -->
     <string name="changelog_fail">Не удалось получить журнал изменений</string>
     <!-- Up to date card -->
     <string name="update_old_title">Вы используете последнюю версию!</string>
-    <string name="update_old_summary">Теперь, когда установка успешно завершена, вы можете получить zip из /data/shishu_updates или удалить его, чтобы сохранить некоторое пространство.</string>
-    <string name="update_about_install">Обновление успешно загружено, теперь, когда вы будете готовы, нажмите кнопку Установить и обновите это устройство.</string>
+    <string name="update_old_summary">Тепер, коли оновлення успішно завершене, ви можете залишити zip з / data / shishu_updates або видалити його, щоб заощадити місце.</string>
+    <string name="update_about_install">Оновлення завантажено успішно, тепер, коли ви будете готові, натисніть кнопку \"Встановити\" і оновіть цей пристрій.</string>
 </resources>

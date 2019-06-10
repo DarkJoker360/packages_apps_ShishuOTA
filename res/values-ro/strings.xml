@@ -21,92 +21,104 @@
          WARNING: The application can and will delete any unknown file. -->
     <!-- Directory where the downloads will be exported to.
          The path is relative to the root of the external storage.-->
-    <string name="verifying_download_notification">Verificare actualizare</string>
-    <string name="downloading_notification">Descărcare</string>
-    <string name="download_paused_notification">Descărcare întreruptă</string>
-    <string name="download_paused_error_notification">Eroare la descărcare</string>
-    <string name="download_completed_notification">Descărcare finalizată</string>
-    <string name="download_starting_notification">Pornire descărcare</string>
-    <string name="update_failed_notification">Actualizare Eșuată</string>
-    <string name="new_updates_found_title">Actualizări noi</string>
-    <string name="text_download_speed">%1$s, %2$s/s</string>
+    <string name="verification_failed_notification">Doğrulama başarısız</string>
+    <string name="verifying_download_notification">Güncelleme doğrulanıyor</string>
+    <string name="downloading_notification">İndiriliyor</string>
+    <string name="download_paused_notification">İndirme duraklatıldı</string>
+    <string name="download_paused_error_notification">İndirme hatası</string>
+    <string name="download_completed_notification">İndirme tamamlandı</string>
+    <string name="download_starting_notification">İndirme başlatılıyor</string>
+    <string name="update_failed_notification">Güncelleme başarısız oldu</string>
+    <string name="new_updates_found_title">Yeni güncellemeler</string>
+    <string name="text_download_speed">%1$s, %2$s/sn</string>
     <string name="pause_button">Pauză</string>
-    <string name="resume_button">Reia</string>
-    <string name="installing_update">Se instalează pachetul de actualizare</string>
-    <string name="installing_update_error">Eroare la instalare</string>
-    <string name="installing_update_finished">Actualizare instalată</string>
-    <string name="finalizing_package">Se finalizează instalarea pachetului</string>
-    <string name="preparing_ota_first_boot">Se pregătește pentru prima pornire</string>
-    <string name="dialog_prepare_zip_message">Pregătire preliminară pentru actualizare</string>
+    <string name="resume_button">Devam et</string>
+    <string name="installing_update">Güncelleme paketi yükleniyor</string>
+    <string name="installing_update_error">Yükleme hatası</string>
+    <string name="installing_update_finished">Güncelleme yüklendi</string>
+    <string name="finalizing_package">Paket yüklenimi tamamlanıyor</string>
+    <string name="preparing_ota_first_boot">Ön yükleme için hazırlanıyor</string>
+    <string name="dialog_prepare_zip_message">Güncelleme ön hazırlığı</string>
     <string name="dialog_battery_low_title">Baterie slabă</string>
-    <string name="dialog_battery_low_message_pct">Nivelul bateriei este prea scăzut. Aveți nevoie de cel puțin<xliff:g id="percent_discharging">%1$d</xliff:g>%% pentru a continua, <xliff:g id="percent_charging">%2$d</xliff:g>%% dacă telefonul este la încărcat.</string>
+    <string name="dialog_battery_low_message_pct">Pil seviyesi çok düşük, devam etmek için en az %%<xliff:g id="percent_discharging">%1$d</xliff:g> pil gereklidir, %%<xliff:g id="percent_charging">%2$d</xliff:g> şarj ediliyor.</string>
     <string name="reboot">Restart</string>
-    <string name="menu_refresh">Reîmprospătează</string>
+    <string name="menu_refresh">Yenile</string>
     <string name="menu_preferences">Preferințe</string>
-    <string name="menu_auto_updates_check">Verificare automată a actualizărilor</string>
-    <string name="menu_auto_delete_updates">Şterge actualizările atunci când sunt instalate</string>
+    <string name="menu_auto_updates_check">Otomatik güncelleme kontrolü</string>
+    <string name="menu_auto_delete_updates">Yüklendiğinde güncellemeleri sil</string>
     <string name="menu_delete_update">Șterge</string>
-    <string name="menu_copy_url">Copiază URL-ul</string>
-    <string name="menu_export_update">Exportează actualizarea</string>
-    <string name="menu_ab_perf_mode">Proces actualizare prioritar</string>
-    <string name="snack_updates_found">Noi actualizări găsite</string>
-    <string name="snack_no_updates_found">Nu s-au găsit actualizări noi</string>
-    <string name="snack_updates_check_failed">Verificarea actualizării a eșuat. Vă rugăm să verificați conexiunea la internet și să încercați din nou mai târziu.</string>
-    <string name="snack_download_failed">Descărcarea a eșuat. Vă rugăm să verificați conexiunea la internet și să încercați din nou mai târziu.</string>
-    <string name="snack_download_verification_failed">Verificarea actualizării a eșuat.</string>
-    <string name="snack_download_verified">Descărcare finalizată.</string>
-    <string name="snack_update_not_installable">Această actualizare nu poate fi instalată pe versiunea curentă.</string>
-    <string name="header_last_updates_check">Ultima verificare: <xliff:g id="date" example="1 January 1970">%1$s</xliff:g> (<xliff:g id="time" example="01:23">%2$s</xliff:g>)</string>
-    <string name="list_download_progress_new"><xliff:g id="filesize_without_unit" example="12.2">%1$s</xliff:g> din <xliff:g id="filesize_without_unit" example="310 MB">%2$s</xliff:g> • <xliff:g id="percentage" example="56">%3$s</xliff:g></string>
-    <string name="list_download_progress_eta_new"><xliff:g id="filesize_without_unit" example="12.2">%1$s</xliff:g> din <xliff:g id="filesize_without_unit" example="310 MB">%2$s</xliff:g> (<xliff:g id="eta" example="3 minutes left">%3$s</xliff:g>) • <xliff:g id="percentage" example="56">%4$s</xliff:g></string>
-    <string name="list_verifying_update">Verificare actualizare</string>
-    <string name="list_no_updates">Nicio actualizare nouă găsită. Pentru a verifica manual pentru noi actualizări, utilizați butonul Reîmprospătare.</string>
-    <string name="action_download">Descarcă</string>
+    <string name="menu_copy_url">URL\'yi kopyala</string>
+    <string name="menu_export_update">Güncellemeyi dışarı aktar</string>
+    <string name="menu_ab_perf_mode">Güncelleme işlemine öncelik ver</string>
+    <string name="snack_updates_found">Yeni güncellemeler bulundu</string>
+    <string name="snack_no_updates_found">Yeni güncelleme bulunamadı</string>
+    <string name="snack_updates_check_failed">Güncelleme kontrolü başarısız oldu. Lütfen internet bağlantınızı kontrol edin ve daha sonra tekrar deneyin.</string>
+    <string name="snack_download_failed">Güncelleme indirilemedi. Lütfen internet bağlantınızı kontrol edin ve daha sonra tekrar deneyin.</string>
+    <string name="snack_download_verification_failed">Güncelleme doğrulaması başarısız oldu.</string>
+    <string name="snack_download_verified">İndirme tamamlandı.</string>
+    <string name="snack_update_not_installable">Bu güncelleme mevcut yapının üstüne kurulamaz.</string>
+    <string name="header_last_updates_check">Son kontrol: <xliff:g id="date" example="1 January 1970">%1$s</xliff:g> (<xliff:g id="time" example="01:23">%2$s</xliff:g>)</string>
+    <string name="list_download_progress_new"><xliff:g id="filesize_without_unit" example="12.2">%1$s</xliff:g> of <xliff:g id="filesize_without_unit" example="310 MB">%2$s</xliff:g> • <xliff:g id="percentage" example="56">%3$s</xliff:g></string>
+    <string name="list_download_progress_eta_new"><xliff:g id="filesize_without_unit" example="12.2">%1$s</xliff:g> of <xliff:g id="filesize_without_unit" example="310 MB">%2$s</xliff:g> (<xliff:g id="eta" example="3 minutes left">%3$s</xliff:g>) • <xliff:g id="percentage" example="56">%4$s</xliff:g></string>
+    <string name="list_verifying_update">Güncelleme doğrulanıyor</string>
+    <string name="list_no_updates">Yeni güncelleme bulunamadı. Yeni güncellemeleri manuel olarak kontrol etmek için yenile tuşunu kullanın.</string>
+    <string name="action_download">İndir</string>
     <string name="action_pause">Pauză</string>
-    <string name="action_resume">Reia</string>
-    <string name="action_install">Instalează</string>
-    <string name="action_info">Informații</string>
+    <string name="action_resume">Devam et</string>
+    <string name="action_install">Yükle</string>
+    <string name="action_info">Bilgiler</string>
     <string name="action_delete">Șterge</string>
     <string name="action_cancel">Anulează</string>
-    <string name="confirm_delete_dialog_title">Ştergeţi fişierul</string>
-    <string name="confirm_delete_dialog_message">Intenţionaţi să ştergeţi fişierul de actualizare descărcat. Continuaţi?</string>
-    <string name="apply_update_dialog_title">Aplicaţi actualizarea</string>
-    <string name="apply_update_dialog_message">Sunteți pe cale de a instala actualizarea <xliff:g id="update_name">%1$s</xliff:g>.\n\nDacă apăsați <xliff:g id="ok">%2$s</xliff:g>, dispozitivul se va restarta în modul de recuperare pentru a instala actualizarea.\n\nNotă: Această caracteristică necesită o Recuperare compatibilă sau actualizările vor trebui să fie instalate manual.</string>
-    <string name="apply_update_dialog_message_ab">Sunteți pe cale de a face upgrade la <xliff:g id="update_name">%1$s</xliff:g>.\n\nDacă apăsați <xliff:g id="ok">%2$s</xliff:g>, dispozitivul va începe instalarea în fundal.\n\nOdată finalizată, veți fi anunțat(ă) să reporniți telefonul.</string>
-    <string name="cancel_installation_dialog_message">Revocaţi instalarea?</string>
-    <string name="label_download_url">Descărcați URL-ul</string>
-    <string name="toast_download_url_copied">URL copiat</string>
-    <string name="dialog_export_title">Exportare actualizare</string>
-    <string name="notification_export_success">Actualizare exportată</string>
-    <string name="notification_export_fail">Eroare de export</string>
-    <string name="toast_already_exporting">Se exportează deja o actualizare</string>
+    <string name="confirm_delete_dialog_title">Dosyayı sil</string>
+    <string name="confirm_delete_dialog_message">Seçilen güncelleme dosyası silinsin mi?</string>
+    <string name="apply_update_dialog_title">Güncellemeyi uygula</string>
+    <string name="apply_update_dialog_message"><xliff:g id="update_name">%1$s</xliff:g>\n\nyükseltmek üzeresiniz. <xliff:g id="ok">%2$s</xliff:g>, cihaz güncellemeyi yüklemek için kurtarma modunda yeniden başlatılır.\n\nNot: Bu özellik uyumlu bir kurtarma gerektirir veya güncellemelerin manuel olarak yüklenmesi gerekir.</string>
+    <string name="apply_update_dialog_message_ab"><xliff:g id="update_name">%1$s</xliff:g>.\n\nyükseltmek üzeresiniz. <xliff:g id="ok">%2$s</xliff:g>, cihaz arka planda kurulmaya başlayacaktır.\n\nİşlem tamamlandığında, yeniden başlatmanız istenir.</string>
+    <string name="cancel_installation_dialog_message">Yükleme iptal edilsin mi?</string>
+    <string name="label_download_url">URL\'yi indir</string>
+    <string name="toast_download_url_copied">URL kopyalandı</string>
+    <string name="dialog_export_title">Güncellemeyi dışarı aktar</string>
+    <string name="notification_export_success">Güncelleme dışa aktarıldı</string>
+    <string name="notification_export_fail">Dışa aktarım hatası</string>
+    <string name="toast_already_exporting">Zaten bir güncelleme dışa aktarılıyor</string>
     <plurals name="eta_seconds">
-        <item quantity="one">O secundă rămasă</item>
-        <item quantity="few">Câteva</item>
-        <item quantity="other"><xliff:g id="count">%d</xliff:g> (de) secunde rămase</item>
+        <item quantity="one">1 saniye kaldı</item>
+        <item quantity="few"><xliff:g id="count">%d</xliff:g> saniye kaldı</item>
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> saniye kaldı</item>
     </plurals>
-    <string name="update_on_mobile_data_title">Atenție</string>
-    <string name="update_on_mobile_data_message">Sunteți pe cale de a descărca un pachet de actualizare folosind datele mobile care, probabil, vor provoca o utilizare mare de date. Doriţi să continuaţi?</string>
+    <plurals name="eta_minutes">
+        <item quantity="one">1 dakika kaldı</item>
+        <item quantity="few"><xliff:g id="count">%d</xliff:g> dakika kaldı</item>
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> dakika kaldı</item>
+    </plurals>
+    <plurals name="eta_hours">
+        <item quantity="one">1 saat kaldı</item>
+        <item quantity="few"><xliff:g id="count">%d</xliff:g> saat kaldı</item>
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> saat kaldı</item>
+    </plurals>
+    <string name="update_on_mobile_data_title">Aviso</string>
+    <string name="update_on_mobile_data_message">Yüksek veri kullanımına neden olabilecek mobil veri kullanarak bir güncelleme paketi indirmek üzeresiniz. Devam etmek ister misiniz?</string>
     <string name="checkbox_mobile_data_warning">Nu arăta din nou</string>
-    <string name="menu_mobile_data_warning">Avertizare de date mobile</string>
-    <string name="blocked_update_dialog_title">Actualizare blocată</string>
-    <string name="blocked_update_dialog_message">Această actualizare nu poate fi instalată folosind actualizatorul aplicaţiei.</string>
-    <string name="export_channel_title">Completare export</string>
-    <string name="new_updates_channel_title">Actualizări noi</string>
-    <string name="ongoing_channel_title">Descărcări în desfășurare</string>
-    <string name="update_failed_channel_title">Actualizare Eșuată</string>
+    <string name="menu_mobile_data_warning">Mobil veri uyarısı</string>
+    <string name="blocked_update_dialog_title">Güncelleme engellendi</string>
+    <string name="blocked_update_dialog_message">Bu güncelleme, güncelleme uygulaması kullanılarak yüklenemez.</string>
+    <string name="export_channel_title">Dışa aktarma tamamlandı</string>
+    <string name="new_updates_channel_title">Yeni güncellemeler</string>
+    <string name="ongoing_channel_title">Devam eden indirmeler</string>
+    <string name="update_failed_channel_title">Güncelleme başarısız oldu</string>
     <!-- New Headers info -->
-    <string name="header_updates_no_update">Eşti la zi!</string>
-    <string name="header_updates_new_build">Există o actualizare nouă</string>
+    <string name="header_updates_no_update">Sisteminiz güncel</string>
+    <string name="header_updates_new_build">Yeni bir güncelleme var</string>
     <!-- Strings for update card -->
-    <string name="update_title">Actualizare nouă</string>
+    <string name="update_title">Yeni güncelleme</string>
     <string name="update_button_changelog">Istoric modificări</string>
-    <string name="update_new_release">O nouă actualizare este pregătită pentru al tău %s!</string>
-    <string name="update_new_release_small">Verifică noile improvizări şi schimbările pe care această versiune le aduce sau descarcă chiar acum.</string>
-    <string name="update_new_release_big">Verifică noile lucruri care te aşteaptă pe tine sau descarcă această versiune chiar acum.</string>
+    <string name="update_new_release">%s için yeni bir güncelleme geldi!</string>
+    <string name="update_new_release_small">Şu anda bu derlemenin getirdiği veya indirdiği yeni geliştirmeleri ve değişiklikleri kontrol edin.</string>
+    <string name="update_new_release_big">Sizi bekleyen yeni şeyleri kontrol edin veya şu anda bu yeni sürümü indirin.</string>
     <!-- changelog -->
-    <string name="changelog_fail">Nu s-a reuşit găsirea modificărilor</string>
+    <string name="changelog_fail">Değişiklikler alınamadı</string>
     <!-- Up to date card -->
-    <string name="update_old_title">Eşti la zi!</string>
-    <string name="update_old_summary">Acum, că instalația s-a termimat cu succes, poți să iei zip-ul din /data/shishu_updates sau să-l ștergi ca să salvezi puțin spațiu.</string>
+    <string name="update_old_title">Hey, Sisteminiz güncel!</string>
+    <string name="update_old_summary">Kurulum başarıyla tamamlandıktan sonra, biraz yer kazanmak için /data/shishu_updates klasöründen zip\'i alabilir veya silebilirsiniz.</string>
+    <string name="update_about_install">Güncelleme başarıyla indirildi, hazır olduğunuzda, Yükle tuşuna basın ve bu cihazı güncelleyin.</string>
 </resources>
