@@ -44,7 +44,7 @@
     <string name="reboot">再起動</string>
     <string name="menu_refresh">更新</string>
     <string name="menu_preferences">設定</string>
-    <string name="menu_auto_updates_check">更新の自動確認</string>
+    <string name="menu_auto_updates_check">自動確認</string>
     <string name="menu_auto_delete_updates">インストール後に更新を削除する</string>
     <string name="menu_delete_update">削除</string>
     <string name="menu_copy_url">URL のコピー</string>
@@ -78,7 +78,7 @@
     <string name="label_download_url">ダウンロード URL</string>
     <string name="toast_download_url_copied">URL をコピーしました</string>
     <string name="dialog_export_title">更新のエクスポート中</string>
-    <string name="notification_export_success">更新のエクスポート</string>
+    <string name="notification_export_success">更新をエクスポートしました</string>
     <string name="notification_export_fail">エラーのエクスポート</string>
     <string name="toast_already_exporting">既に更新をエクスポートしています</string>
     <plurals name="eta_seconds">
@@ -110,7 +110,7 @@
     <string name="update_new_release_small">このビルドの新しい改良点や変更点を確認するか、今すぐダウンロードして下さい。</string>
     <string name="update_new_release_big">このビルドのあなたへの新しい点を確認するか、今すぐダウンロードして下さい。</string>
     <!-- changelog -->
-    <string name="changelog_fail">変更履歴を取得できませんでした</string>
+    <string name="changelog_fail">更新履歴を取得できませんでした</string>
     <!-- Up to date card -->
     <string name="update_old_title">最新のバージョンです!</string>
     <string name="update_old_summary">インストールが正常に完了したので、/data/shishu_updates から ZIP を入手できます。容量を節約するために削除することもできます。</string>
